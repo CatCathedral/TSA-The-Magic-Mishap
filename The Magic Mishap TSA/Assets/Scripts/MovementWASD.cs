@@ -7,6 +7,7 @@ public class Player1Movement : MonoBehaviour
     public float cooldown = 1f; // Time between shots
 
     private float lastShotTime;
+    private Vector2 lastMovementDirection = Vector2.up; // Default direction
 
     void Update()
     {
@@ -14,12 +15,18 @@ public class Player1Movement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         Vector2 movement = new Vector2(moveX, moveY).normalized;
+
+        if (movement != Vector2.zero) // Update last movement direction if moving
+        {
+            lastMovementDirection = movement;
+        }
+
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
         // Shooting
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > lastShotTime + cooldown)
         {
-            Shoot(movement); // Shoot in the direction of movement
+            Shoot(lastMovementDirection); // Shoot in the direction of movement
             lastShotTime = Time.time;
         }
     }
