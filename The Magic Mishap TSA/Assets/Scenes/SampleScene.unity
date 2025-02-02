@@ -378,6 +378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  projectilePrefab: {fileID: 8068502440354684919, guid: 43747e66f4cb84e58bd5dc7f9982c496, type: 3}
+  cooldown: 0.01
 --- !u!1 &1149883592
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  projectilePrefab: {fileID: 9150365900289240607, guid: a7a9e6af206354ce78bfe1921eb7523b, type: 3}
+  cooldown: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
