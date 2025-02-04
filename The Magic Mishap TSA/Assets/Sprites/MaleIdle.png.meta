@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 86b3df29dbc61487da088066557c0c40
+guid: c1ed5fd0981484287a85cb6efbe36714
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5931842347579807508
-    second: New Piskel-1.png_0
+      213: -7779928682999352270
+    second: MaleIdle_0
+  - first:
+      213: 1797252234677143634
+    second: MaleIdle_1
+  - first:
+      213: -2451026835352973492
+    second: MaleIdle_2
+  - first:
+      213: -5449662804120032816
+    second: MaleIdle_3
+  - first:
+      213: 7629261171182516193
+    second: MaleIdle_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 130
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel-1.png_0
+      name: MaleIdle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 127
-        width: 480
-        height: 226
+        x: 42
+        y: 23
+        width: 63
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4171d17df23225250800000000000000
-      internalID: 5931842347579807508
+      spriteID: 23473f72514280490800000000000000
+      internalID: -7779928682999352270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleIdle_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 23
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25845bb926f11f810800000000000000
+      internalID: 1797252234677143634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleIdle_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 23
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f06df44143cfdd0800000000000000
+      internalID: -2451026835352973492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleIdle_3
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 23
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d924ce9d88ee54b0800000000000000
+      internalID: -5449662804120032816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaleIdle_4
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 23
+        width: 63
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7b3071d9490e960800000000000000
+      internalID: 7629261171182516193
       vertices: []
       indices: 
       edges: []
@@ -147,8 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      New Piskel-1.png_0: 5931842347579807508
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 86b3df29dbc61487da088066557c0c40
+guid: 9bb0e9e95f3af4442ba2c3a72b5b9472
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5931842347579807508
-    second: New Piskel-1.png_0
+      213: -7453312164490097956
+    second: VillainWalking_0
+  - first:
+      213: -1484000814813291609
+    second: VillainWalking_1
+  - first:
+      213: 4562930821042290115
+    second: VillainWalking_2
+  - first:
+      213: -3877517062989959777
+    second: VillainWalking_3
+  - first:
+      213: 7502572762079816826
+    second: VillainWalking_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 130
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Piskel-1.png_0
+      name: VillainWalking_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 127
-        width: 480
-        height: 226
+        x: 42
+        y: 23
+        width: 63
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4171d17df23225250800000000000000
-      internalID: 5931842347579807508
+      spriteID: cda48736314809890800000000000000
+      internalID: -7453312164490097956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillainWalking_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 21
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abd9aa1f15c76be0800000000000000
+      internalID: -1484000814813291609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillainWalking_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 24
+        width: 67
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd38e20869c25f30800000000000000
+      internalID: 4562930821042290115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillainWalking_3
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 23
+        width: 75
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9da7f176ca403ac0800000000000000
+      internalID: -3877517062989959777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VillainWalking_4
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 25
+        width: 75
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ce9414d2e7e1860800000000000000
+      internalID: 7502572762079816826
       vertices: []
       indices: 
       edges: []
@@ -147,8 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      New Piskel-1.png_0: 5931842347579807508
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
