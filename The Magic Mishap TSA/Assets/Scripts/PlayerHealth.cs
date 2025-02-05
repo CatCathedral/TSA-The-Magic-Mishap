@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
    void Start(){
        currentHealth = maxHealth;
-       slider.maxValue =maxHealth;
+       slider.maxValue = maxHealth;
        slider.value = currentHealth;
    }
 
@@ -20,7 +20,6 @@ public class PlayerHealth : MonoBehaviour
    public void ChangeHealth(int amount){
        currentHealth += amount;
        slider.value = currentHealth;
-
 
        if(currentHealth <= 0){
            gameObject.SetActive(false);
