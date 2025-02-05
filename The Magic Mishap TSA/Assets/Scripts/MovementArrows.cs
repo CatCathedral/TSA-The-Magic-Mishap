@@ -41,6 +41,7 @@ public class Player2Movement : MonoBehaviour
 
         anim.SetFloat("horizontal", Mathf.Abs(moveX));
         anim.SetFloat("vertical", Mathf.Abs(moveY));
+    }
 
     void Flip()
     {
