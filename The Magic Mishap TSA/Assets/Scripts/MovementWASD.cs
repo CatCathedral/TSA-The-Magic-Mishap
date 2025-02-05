@@ -5,6 +5,7 @@ public class Player1Movement : MonoBehaviour
     public float moveSpeed = 5f;
     public GameObject projectilePrefab; // Assign GreenProjectile.prefab in Inspector
     public float cooldown = 1f; // Time between shots
+    private Rigidbody2D rb;
 
     private float lastShotTime;
     private Vector2 lastMovementDirection = Vector2.up; // Default direction
@@ -13,34 +14,46 @@ public class Player1Movement : MonoBehaviour
 
     public int facingDirection = 1;
 
+    private bool isKnockedback;
+
     void Update()
     {
-        // Movement
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        Vector2 movement = new Vector2(moveX, moveY).normalized;
-
-        if (movement != Vector2.zero) // Update last movement direction if moving
+        if (isKnockedback == false)
         {
-            lastMovementDirection = movement;
+            // Movement
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
+            Vector2 movement = new Vector2(moveX, moveY).normalized;
+
+            if (movement != Vector2.zero) // Update last movement direction if moving
+            {
+                lastMovementDirection = movement;
+            }
+
+            transform.Translate(movement * moveSpeed * Time.deltaTime);
+
+            // Shooting
+            if (Input.GetKeyDown(KeyCode.Space) && Time.time > lastShotTime + cooldown)
+            {
+                Shoot(lastMovementDirection); // Shoot in the direction of movement
+                lastShotTime = Time.time;
+            }
+
+            if(moveX > 0 && transform.localScale.x > 0 || moveX < 0 && transform.localScale.x < 0)
+            {
+                Flip();
+            }
+
+            anim.SetFloat("horizontal", Mathf.Abs(moveX));
+            anim.SetFloat("vertical", Mathf.Abs(moveY));
         }
+    }
 
-        transform.Translate(movement * moveSpeed * Time.deltaTime);
-
-        // Shooting
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > lastShotTime + cooldown)
-        {
-            Shoot(lastMovementDirection); // Shoot in the direction of movement
-            lastShotTime = Time.time;
-        }
-
-        if(moveX > 0 && transform.localScale.x > 0 || moveX < 0 && transform.localScale.x < 0)
-        {
-            Flip();
-        }
-
-        anim.SetFloat("horizontal", Mathf.Abs(moveX));
-        anim.SetFloat("vertical", Mathf.Abs(moveY));
+    public void Knockback(Transform enemy)
+    {
+        isKnockedback = true;
+        Vector2 direction = transform.position - enemy.position;
+        rb.linearVelocity = direction;
     }
 
     void Flip()
