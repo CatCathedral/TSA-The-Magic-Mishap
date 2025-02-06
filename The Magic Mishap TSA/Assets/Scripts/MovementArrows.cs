@@ -16,8 +16,17 @@ public class Player2Movement : MonoBehaviour
 
     private bool isKnockedback;
 
+    public Player_Combat playerCombat;
+
+    
+
     void Update()
     {
+
+        if (Input.GetButtonDown("GuyAttack"))
+        {
+            playerCombat.Attack();
+        }
 
         if (isKnockedback == false)
         {

@@ -16,8 +16,18 @@ public class Player1Movement : MonoBehaviour
 
     private bool isKnockedback;
 
+    public Player_Combat playerCombat;
+
+
+
     void Update()
     {
+
+        if (Input.GetButtonDown("GirlAttack"))
+        {
+            playerCombat.Attack();
+        }
+
         if (isKnockedback == false)
         {
             // Movement
@@ -43,7 +53,6 @@ public class Player1Movement : MonoBehaviour
             {
                 Flip();
             }
-
             anim.SetFloat("horizontal", Mathf.Abs(moveX));
             anim.SetFloat("vertical", Mathf.Abs(moveY));
         }

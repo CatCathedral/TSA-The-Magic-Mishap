@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: a06561e4fab2e42948d424ca40337ff4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8303533296390791820
+    second: Female Protagonist TSA Attacking Melee 2_0
+  - first:
+      213: -1610599508318054316
+    second: Female Protagonist TSA Attacking Melee 2_1
+  - first:
+      213: -1103420388933005846
+    second: Female Protagonist TSA Attacking Melee 2_2
+  - first:
+      213: 8885046975432806015
+    second: Female Protagonist TSA Attacking Melee 2_3
+  - first:
+      213: 1206571904246420973
+    second: Female Protagonist TSA Attacking Melee 2_4
+  - first:
+      213: 1386124332613405985
+    second: Female Protagonist TSA Attacking Melee 2_5
+  - first:
+      213: -4466048088365852033
+    second: Female Protagonist TSA Attacking Melee 2_6
+  - first:
+      213: -4680148399134977518
+    second: Female Protagonist TSA Attacking Melee 2_7
+  - first:
+      213: -8763057887940125909
+    second: Female Protagonist TSA Attacking Melee 2_8
+  - first:
+      213: -1188990376495461232
+    second: Female Protagonist TSA Attacking Melee 2_9
+  - first:
+      213: 6025533972771898558
+    second: Female Protagonist TSA Attacking Melee 2_10
+  - first:
+      213: -2222954933113270280
+    second: Female Protagonist TSA Attacking Melee 2_11
+  - first:
+      213: 1029441301027631574
+    second: Female Protagonist TSA Attacking Melee 2_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 23
+        width: 63
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d9ffff57ce3cc80800000000000000
+      internalID: -8303533296390791820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 2
+        width: 86
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458984fc74006a9e0800000000000000
+      internalID: -1610599508318054316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 23
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed89bf900ddfa0f0800000000000000
+      internalID: -1103420388933005846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_3
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 116
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ec45f26270e4b70800000000000000
+      internalID: 8885046975432806015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_4
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 119
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5139411ca9eb010800000000000000
+      internalID: 1206571904246420973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 23
+        width: 83
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d82fb8cb08c3310800000000000000
+      internalID: 1386124332613405985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_6
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 23
+        width: 63
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a142ffce86502c0800000000000000
+      internalID: -4466048088365852033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_7
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 23
+        width: 61
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2125275d3d5cc0fb0800000000000000
+      internalID: -4680148399134977518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_8
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 23
+        width: 61
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bd423974d536680800000000000000
+      internalID: -8763057887940125909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_9
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 23
+        width: 61
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c41a75d8bdf7fe0800000000000000
+      internalID: -1188990376495461232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_10
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 23
+        width: 61
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb40e1d393ffe9350800000000000000
+      internalID: 6025533972771898558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_11
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffc41c144a7621e0800000000000000
+      internalID: -2222954933113270280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Protagonist TSA Attacking Melee 2_12
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 52
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d13ed8b86f494e00800000000000000
+      internalID: 1029441301027631574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
