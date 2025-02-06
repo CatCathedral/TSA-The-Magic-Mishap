@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Male Protagonist TSA Attacking_0: -8168707811802188698
+      Male Protagonist TSA Attacking_1: 2633586750868006141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

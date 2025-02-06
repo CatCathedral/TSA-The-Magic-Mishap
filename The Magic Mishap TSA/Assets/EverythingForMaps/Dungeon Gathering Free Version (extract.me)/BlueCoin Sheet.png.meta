@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueCoin Sheet_0: -382467666205571427
+      BlueCoin Sheet_1: 3025935483925870932
+      BlueCoin Sheet_2: 9222248661886226138
+      BlueCoin Sheet_3: 1947868555215691800
+      BlueCoin Sheet_4: 4010627823840264888
+      BlueCoin Sheet_5: -7069694768290352327
+      BlueCoin Sheet_6: -1416055333563329412
+      BlueCoin Sheet_7: -5717477942442646187
+      BlueCoin Sheet_8: -2499856194217509303
+      BlueCoin Sheet_9: -9075500770189503866
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

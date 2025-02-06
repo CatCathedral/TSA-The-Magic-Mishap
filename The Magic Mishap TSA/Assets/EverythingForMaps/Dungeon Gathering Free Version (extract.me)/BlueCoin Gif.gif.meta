@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueCoin Gif_0: -2340434018717992648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
