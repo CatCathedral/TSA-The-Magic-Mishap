@@ -1,136 +1,97 @@
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-
-
 
 
 public class EnemyMovement : MonoBehaviour
 {
-  
-  public float speed;
-  public float attackRange = 2;
-  public float attackCooldown = 2;
-  public float  playerDetectRange = 5;
-  public Transform detectionPoint;
-  public LayerMask playerLayer;
-
-  private float attackCooldownTimer;
-  private Rigidbody2D rb;
-  private int facingDirection = -1;
-  private Transform player;
-  private Animator anim;
-  private EnemyState enemyState;
+    public float speed; // Speed at which the enemy moves
+    private bool isChasing;
+    private Rigidbody2D rb;
+    private List<Transform> players; // List to store all players
+    private Transform targetPlayer; // Current target player
 
 
-
-  // Start is called once before the first execution of Update after the MonoBehaviour is created
-  void Start()
-  {
-      rb = GetComponent<Rigidbody2D>();
-      anim = GetComponent<Animator>();
-      ChangeState(EnemyState.Idle);
-  }
-
-
-   void Flip()
-   {
-       facingDirection *= -1;
-       transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-   }
-
-
-  // Update is called once per frame
-  void Update()
-  {
-      CheckForPlayer();
-      if(attackCooldownTimer > 0)
-      {
-        attackCooldownTimer -= Time.deltaTime;
-      }
-      if (enemyState == EnemyState.Chasing)
-      {
-           Chase();
-      }
-      else if(enemyState == EnemyState.Attacking)
-      {
-        rb.linearVelocity = Vector2.zero;
-      }
-  }
-
-  void Chase()
-  {
-    if (player.position.x > transform.position.x && facingDirection == -1 || player.position.x < transform.position.x && facingDirection == 1)
-           {
-               Flip();
-           }
-          Vector2 direction = (player.position - transform.position).normalized;
-          rb.linearVelocity = direction * speed;
-  }
-
-
-private void CheckForPlayer()
-{
-    Collider2D[] = Physics2D.OverlapCircleAll(detectionPoint.position, playerDetectRange, playerLayer);
-
-    if(hits.Length > 0)
+    void Start()
     {
-        player = hits[0].transform;
+        rb = GetComponent<Rigidbody2D>();
+        players = new List<Transform>(); // Initialize the list of players
     }
-    // If the player is in attack && cooldown is ready
-    if(Vector2.Distance(transform.position, player.transform.position) <= attackRange && attackCooldownTimer <= 0)
+
+
+    void Update()
     {
-        attackCooldownTimer = attackCooldown;
-        ChangeState(EnemyState.Attacking);
+        if (isChasing && targetPlayer != null)
+        {
+            // Move towards the target player
+            Vector2 direction = (targetPlayer.position - transform.position).normalized;
+            rb.linearVelocity = direction * speed;
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero; // Stop moving if not chasing
+        }
     }
-    else if(Vector2.Distance(transform.position, player.position) > attackRange)
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        ChangeState(EnemyState.Chasing);
+        if (collision.CompareTag("Player"))
+        {
+            // Add the player to the list if not already present
+            if (!players.Contains(collision.transform))
+            {
+                players.Add(collision.transform);
+            }
+
+
+            // Start chasing and set the target player
+            isChasing = true;
+            targetPlayer = GetClosestPlayer();
+        }
     }
-    else
+
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        ChangeState(EnemyState.Idle);
-        rb.linearVelocity = Vector2.zero;
+        if (collision.CompareTag("Player"))
+        {
+            // Remove the player from the list
+            players.Remove(collision.transform);
+
+
+            // If no players are left, stop chasing
+            if (players.Count == 0)
+            {
+                isChasing = false;
+                targetPlayer = null;
+            }
+            else
+            {
+                // Switch to the next closest player
+                targetPlayer = GetClosestPlayer();
+            }
+        }
     }
-}
 
 
+    private Transform GetClosestPlayer()
+    {
+        Transform closestPlayer = null;
+        float closestDistance = Mathf.Infinity;
 
 
- 
+        // Find the closest player in the list
+        foreach (Transform player in players)
+        {
+            float distance = Vector2.Distance(transform.position, player.position);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestPlayer = player;
+            }
+        }
 
 
-   void ChangeState(EnemyState newState)
-   {
-       // Exits animation
-       if(enemyState == EnemyState.Idle)
-           anim.SetBool("isIdle", false);
-       else if (enemyState == EnemyState.Chasing)
-           anim.SetBool("isChasing", false);
-        else if (enemyState == EnemyState.Attacking)
-           anim.SetBool("isAttacking", false);
-
-
-       // Updates the current state
-       enemyState = newState;
-
-
-       // Update to new animation
-       if(enemyState == EnemyState.Idle)
-           anim.SetBool("isIdle", true);
-       else if (enemyState == EnemyState.Chasing)
-           anim.SetBool("isChasing", true);
-        else if (enemyState == EnemyState.Attacking)
-           anim.SetBool("isAttacking", true);
-   }
-
-
-}
-
-
-public enum EnemyState
-{
-   Idle,
-   Chasing,
-   Attacking, 
+        return closestPlayer;
+    }
 }

@@ -32,14 +32,14 @@ public class Player2Movement : MonoBehaviour
             }
 
             transform.Translate(movement * moveSpeed * Time.deltaTime);
-
+/*
             // Shooting
             if (Input.GetKeyDown(KeyCode.RightShift) && Time.time > lastShotTime + cooldown) // Use RightControl key for Player 2
             {
                 Shoot(lastMovementDirection); // Shoot in the last movement direction
                 lastShotTime = Time.time;
             }
-
+*/
             if(moveX > 0 && transform.localScale.x > 0 || moveX < 0 && transform.localScale.x < 0)
             {
                 Flip();
@@ -61,7 +61,7 @@ public class Player2Movement : MonoBehaviour
         facingDirection *= -1;
         transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
-
+/*
     void Shoot(Vector2 direction)
     {
         if (projectilePrefab == null)
@@ -78,4 +78,5 @@ public class Player2Movement : MonoBehaviour
             projectileScript.direction = direction;
         }
     }
+*/
 }

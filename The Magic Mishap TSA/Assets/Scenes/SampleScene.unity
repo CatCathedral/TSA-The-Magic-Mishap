@@ -1287,7 +1287,7 @@ GameObject:
   - component: {fileID: 253116902}
   m_Layer: 0
   m_Name: FlyingBook_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1356,7 +1356,7 @@ Transform:
   m_GameObject: {fileID: 253116894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.92, y: -1.45, z: 0}
+  m_LocalPosition: {x: 4.46, y: -0.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1457,8 +1457,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  attackRange: 2
-  attackCooldown: 2
 --- !u!58 &253116901
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1607,6 +1605,7 @@ GameObject:
   - component: {fileID: 483252473}
   - component: {fileID: 483252478}
   - component: {fileID: 483252479}
+  - component: {fileID: 483252480}
   m_Layer: 6
   m_Name: Player_Two
   m_TagString: Player
@@ -1802,6 +1801,20 @@ MonoBehaviour:
   currentHealth: 8
   maxHealth: 8
   slider: {fileID: 200120478}
+--- !u!114 &483252480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483252472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa3ca1f8c65f47de8b85240ab0e0656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 10
+  knockbackDuration: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2701,7 @@ GameObject:
   - component: {fileID: 1017238319}
   m_Layer: 0
   m_Name: VillainWalking_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2757,7 +2770,7 @@ Transform:
   m_GameObject: {fileID: 1017238312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.02, y: -1.49, z: 0}
+  m_LocalPosition: {x: 2.75, y: -1.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2917,8 +2930,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  attackRange: 1
-  attackCooldown: 2
 --- !u!1 &1149883592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,6 +2945,7 @@ GameObject:
   - component: {fileID: 1149883598}
   - component: {fileID: 1149883599}
   - component: {fileID: 1149883600}
+  - component: {fileID: 1149883601}
   m_Layer: 6
   m_Name: Player_One
   m_TagString: Player
@@ -3129,6 +3141,20 @@ MonoBehaviour:
   currentHealth: 8
   maxHealth: 8
   slider: {fileID: 1181858564}
+--- !u!114 &1149883601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149883592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa3ca1f8c65f47de8b85240ab0e0656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackForce: 10
+  knockbackDuration: 0.2
 --- !u!1 &1181858562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,7 +3742,7 @@ GameObject:
   - component: {fileID: 1809527060}
   m_Layer: 0
   m_Name: GhostEnemy_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3867,7 +3893,7 @@ Transform:
   m_GameObject: {fileID: 1809527052}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.97, y: -1.29, z: 0}
+  m_LocalPosition: {x: 0.82, y: -1.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3922,8 +3948,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  attackRange: 2
-  attackCooldown: 2
 --- !u!95 &1809527060
 Animator:
   serializedVersion: 7
