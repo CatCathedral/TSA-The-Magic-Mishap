@@ -15,7 +15,7 @@ public class Player2Movement : MonoBehaviour
     public int facingDirection = 1;
 
     private bool isKnockedback;
-
+    public CoinManager cm;
     public Player_Combat playerCombat;
 
     
@@ -88,4 +88,12 @@ public class Player2Movement : MonoBehaviour
         }
     }
 */
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Magic Globe"))
+        {
+            Destroy(other.gameObject);
+            cm.coinCount++; 
+        }        
+    }
 }

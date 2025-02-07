@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Player 1
   - Player 2
+  - Magic Globe
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,7 @@ public class Player1Movement : MonoBehaviour
     public GameObject projectilePrefab; // Assign GreenProjectile.prefab in Inspector
     public float cooldown = 1f; // Time between shots
     private Rigidbody2D rb;
-
+    public CoinManager cm;
     private float lastShotTime;
     private Vector2 lastMovementDirection = Vector2.up; // Default direction
 
@@ -88,4 +88,12 @@ public class Player1Movement : MonoBehaviour
         }
     }
 */
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Magic Globe"))
+        {
+            Destroy(other.gameObject);
+            cm.coinCount++; 
+        }        
+    }
 }

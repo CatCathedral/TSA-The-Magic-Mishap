@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 39b4b6416af3b41ddaf8dce95a8bc986
+  - enabled: 1
     path: Assets/Scenes/StartingRoom.unity
     guid: f29260d3592564beab1e6ee5eb95ad83
   - enabled: 1
@@ -20,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalRoom.unity
     guid: 490e1e61785e0403f9a49983f01b6a7b
+  - enabled: 1
+    path: Assets/Scenes/Thanks.unity
+    guid: b35f7f7cd5d9f47838f0279784f36f56
+  - enabled: 1
+    path: Assets/Scenes/GoodBye.unity
+    guid: ebed8fdd3ba3c498a8869fad3edfc2ca
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
