@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GhostEnemy 2_0: 3515116460119089058
+      GhostEnemy 2_1: -284547853591439715
+      GhostEnemy 2_2: 6922797618056926240
+      GhostEnemy 2_3: -437558090154297305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

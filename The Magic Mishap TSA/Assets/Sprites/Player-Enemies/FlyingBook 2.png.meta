@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlyingBook 2_0: -6045844902305786761
+      FlyingBook 2_1: 7167697386524824098
+      FlyingBook 2_2: -8234726161172608917
+      FlyingBook 2_3: 2124077373110914984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

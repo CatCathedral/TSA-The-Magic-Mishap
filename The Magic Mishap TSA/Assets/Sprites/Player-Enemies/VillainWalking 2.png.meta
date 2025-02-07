@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      VillainWalking 2_0: -2130798112778039671
+      VillainWalking 2_1: -829827220140140323
+      VillainWalking 2_2: 8003160895543660293
+      VillainWalking 2_3: 4155372452508697653
+      VillainWalking 2_4: 6943951403246300826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

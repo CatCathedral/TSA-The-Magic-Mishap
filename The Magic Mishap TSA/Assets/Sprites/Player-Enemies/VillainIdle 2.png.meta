@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      VillainIdle 2_0: 178800745437093989
+      VillainIdle 2_1: 8535620773636792593
+      VillainIdle 2_2: 8081362180839329767
+      VillainIdle 2_3: -1735545800387067962
+      VillainIdle 2_4: 6361446872881782110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
