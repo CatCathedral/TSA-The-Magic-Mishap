@@ -2944,7 +2944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 137.229, y: -74.904785}
+  m_AnchoredPosition: {x: 241, y: -109}
   m_SizeDelta: {x: 1092.3506, y: 116.8171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263839659
@@ -2968,8 +2968,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_Font: {fileID: 12800000, guid: 1295f7c139e574aa4838b47f74992c09, type: 3}
+    m_FontSize: 41
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 4
@@ -2980,7 +2980,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Magic Globes Collected:'
+  m_Text: 'Magic Orbs Collected:'
 --- !u!222 &263839660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4707,6 +4707,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01443408eb2a241dca506e82f044fe7e, type: 3}
+--- !u!1001 &1798085971
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3997623050995525125, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_Name
+      value: GameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.3729515
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3823022
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.02479707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583244844694615112, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ddee5c711f3f4672a7010d47b4ff80c, type: 3}
 --- !u!1 &1872000633
 GameObject:
   m_ObjectHideFlags: 0
@@ -7542,4 +7599,5 @@ SceneRoots:
   - {fileID: 1507127901}
   - {fileID: 1527887175}
   - {fileID: 365492751}
+  - {fileID: 1798085971}
   - {fileID: 641801328}

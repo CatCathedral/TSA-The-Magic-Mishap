@@ -41,14 +41,7 @@ public class Player2Movement : MonoBehaviour
             }
 
             transform.Translate(movement * moveSpeed * Time.deltaTime);
-/*
-            // Shooting
-            if (Input.GetKeyDown(KeyCode.RightShift) && Time.time > lastShotTime + cooldown) // Use RightControl key for Player 2
-            {
-                Shoot(lastMovementDirection); // Shoot in the last movement direction
-                lastShotTime = Time.time;
-            }
-*/
+
             if(moveX > 0 && transform.localScale.x > 0 || moveX < 0 && transform.localScale.x < 0)
             {
                 Flip();
@@ -70,24 +63,7 @@ public class Player2Movement : MonoBehaviour
         facingDirection *= -1;
         transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
-/*
-    void Shoot(Vector2 direction)
-    {
-        if (projectilePrefab == null)
-        {
-            Debug.LogError("Projectile prefab is not assigned!");
-            return;
-        }
 
-        // Instantiate the projectile
-        GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-        Projectile projectileScript = projectile.GetComponent<Projectile>();
-        if (projectileScript != null)
-        {
-            projectileScript.direction = direction;
-        }
-    }
-*/
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Magic Globe"))
